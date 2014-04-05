@@ -1,0 +1,28 @@
+{
+  "name": "highwater",
+  "version": "0.1.11",
+  "description": "API for managing user metadata.",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "mocha"
+  },
+  "repository": "https://github.com/tidepool-org/highwater.git",
+  "author": "Tidepool",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "restify": "2.6.3",
+    "crypto-js": "3.1.2-2",
+    "request": "2.34.0",
+    "lodash": "2.4.1",
+    "hakken": "0.1.4",
+    "bunyan": "0.22.1",
+    "amoeba": "0.0.7",
+    "moment": "2.5.1",
+    "user-api-client": "0.1.5"
+  },
+  "devDependencies": {}
+}
