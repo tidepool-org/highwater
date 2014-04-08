@@ -86,6 +86,8 @@ module.exports = (function() {
   // the service token for KISSmetrics
   env.apikey = config.fromEnvironment('METRICS_APIKEY');
 
+  env.metricsToken = config.fromEnvironment('METRICS_TOKEN', null);
+
   // if this is specified then the noauth endpoint is delivered
   env.noauth = config.fromEnvironment('NOAUTH', false);
 
