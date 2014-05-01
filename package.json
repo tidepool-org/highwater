@@ -1,6 +1,6 @@
 {
   "name": "highwater",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "API for managing user metadata.",
   "main": "lib/index.js",
   "directories": {
