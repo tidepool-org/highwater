@@ -90,6 +90,12 @@ module.exports = (function() {
   // the service token for KISSmetrics
   env.apikey = config.fromEnvironment('METRICS_APIKEY');
 
+  env.ucsf = {
+    // the service token for KISSmetrics for the ucsf pilot
+    apikey: config.fromEnvironment('METRICS_UCSF_APIKEY'),
+    whitelist: config.fromEnvironment('METRICS_UCSF_WHITELIST', '').split(',').map(function(e){ return e.trim(); })
+  };
+
   env.metricsToken = config.fromEnvironment('METRICS_TOKEN', null);
 
   // if this is specified then the noauth endpoint is delivered
