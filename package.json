@@ -21,7 +21,7 @@
     "lodash": "3.0.0",
     "moment": "2.5.1",
     "request": "2.34.0",
-    "restify": "2.6.3",
+    "restify": "2.8.5",
     "user-api-client": "0.3.0"
   },
   "devDependencies": {}
