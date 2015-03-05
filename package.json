@@ -20,7 +20,7 @@
     "hakken": "0.1.6",
     "lodash": "3.3.1",
     "moment": "2.9.0",
-    "request": "2.51.0",
+    "request": "2.53.0",
     "restify": "2.8.5",
     "user-api-client": "0.3.0"
   },
