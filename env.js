@@ -98,8 +98,14 @@ module.exports = (function() {
 
   env.metricsToken = config.fromEnvironment('METRICS_TOKEN', null);
 
-  env.awsConfig = JSON.parse(config.fromEnvironment('AWS_CONFIG'));
-  env.awsTableName = config.fromEnvironment('AWS_TABLE_NAME');
+  var awsConfig = config.fromEnvironment('AWS_CONFIG');
+  if (awsConfig) {
+    env.awsConfig = JSON.parse(awsConfig);
+    env.awsTableName = config.fromEnvironment('AWS_TABLE_NAME');
+  } else {
+    env.awsConfig = "";
+    env.awsTableName = "";
+  }
 
   // if this is specified then the noauth endpoint is delivered
   env.noauth = config.fromEnvironment('NOAUTH', false);
