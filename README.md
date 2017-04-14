@@ -22,7 +22,5 @@ KISSMetrics normal metrics requires that the config include METRICS_APIKEY for K
 
 KISSMetrics whitelist metrics requires that the logging include a key for METRICS_UCSF_APIKEY; if it's missing (but the METRICS_APIKEY is still present) then the whitelist metrics will be omitted but KISSMetrics logging will still take place.
 
-Finally, metrics can be logged to AWS DynamoDB, but only if the AWS_CONFIG environment object is filled out (see tools/runservers for examples).
-
 If all three values are missing, then the metrics system is a no-op. This is useful when running a local stack.
 
