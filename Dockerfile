@@ -25,7 +25,6 @@ COPY package.json /app/package.json
 RUN yarn install
 COPY . /app
 
-VOLUME /app
 USER node
 
 CMD ["npm", "start"]
