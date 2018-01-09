@@ -22,12 +22,8 @@ addons:
       - /
 
 services:
+  - docker
   - mongodb
 
 script:
   - ./artifact.sh
-
-notifications:
-  email:
-    on_success: change
-    on_failure: always
