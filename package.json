@@ -23,7 +23,7 @@
     "moment": "^2.24.0",
     "request": "2.88.0",
     "restify": "8.3.3",
-    "user-api-client": "0.4.3"
+    "user-api-client": "0.4.4"
   },
   "devDependencies": {}
 }
