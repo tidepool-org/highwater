@@ -91,7 +91,7 @@ module.exports = (function() {
   // the service token for KISSmetrics
   env.apikey = config.fromEnvironment('METRICS_APIKEY', '');
 
-  ucsf_apikey = config.fromEnvironment('METRICS_UCSF_APIKEY', '');
+  var ucsf_apikey = config.fromEnvironment('METRICS_UCSF_APIKEY', '');
   if( ucsf_apikey ) {
     env.ucsf = {
       // the service token for KISSmetrics for the ucsf pilot
