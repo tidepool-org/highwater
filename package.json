@@ -7,7 +7,7 @@
     "lib": "./lib"
   },
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "node --trace-warnings lib/index.js",
     "test": "mocha"
   },
   "repository": "https://github.com/tidepool-org/highwater.git",

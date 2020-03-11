@@ -8,4 +8,4 @@ nvm use --delete-prefix "${START_NODE_VERSION}"
 
 . config/env.sh
 
-exec node lib/index.js
+exec node --trace-warnings lib/index.js
