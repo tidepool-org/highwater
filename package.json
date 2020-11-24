@@ -14,10 +14,11 @@
   "author": "Tidepool",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "amoeba": "0.8.1",
+    "amoeba": "^0.9.0",
     "aws-sdk": "2.1.23",
     "bunyan": "1.8.14",
     "crypto-js": "3.1.2-5",
+    "kafkajs": "^1.14.0",
     "lodash": "4.17.20",
     "moment": "2.24.0",
     "request": "2.88.0",
