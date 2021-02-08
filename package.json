@@ -14,6 +14,7 @@
   "author": "Tidepool",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "@godaddy/terminus": "^4.6.0",
     "amoeba": "^1.0.2",
     "aws-sdk": "2.1.23",
     "bunyan": "1.8.14",
