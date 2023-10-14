@@ -1,19 +1,30 @@
-sudo: false
+dist: jammy
 
 language: node_js
 
 node_js:
-  - 10.14.2
+  - 20.9.0
 
-install:
-  - npm install
+services:
+  - docker
+
+env:
+  global:
+    - MONGODB=mongodb-linux-x86_64-ubuntu2204-6.0.10
+    - MONGOSH=mongosh-2.0.2-linux-x64
+
+before_install:
+  - sudo apt-get remove -y mongodb-org mongodb-org-mongos mongodb-org-server mongodb-org-shell mongodb-org-tools
+  - wget https://fastdl.mongodb.org/linux/${MONGODB}.tgz -O /tmp/mongodb.tgz
+  - tar -xf /tmp/mongodb.tgz
+  - wget https://downloads.mongodb.com/compass/${MONGOSH}.tgz -O /tmp/mongosh.tgz
+  - tar -xf /tmp/mongosh.tgz
+  - mkdir /tmp/data
+  - ${PWD}/${MONGODB}/bin/mongod --dbpath /tmp/data --bind_ip 127.0.0.1 --replSet rs0 --logpath ${PWD}/mongod.log &> /dev/null &
+  - until nc -z localhost 27017; do echo Waiting for MongoDB; sleep 1; done
+  - ${PWD}/${MONGOSH}/bin/mongosh --eval 'rs.initiate(); while (rs.status().startupStatus || (rs.status().hasOwnProperty("myState") && rs.status().myState != 1)) { printjson( rs.status() ); sleep(1000); }; printjson( rs.status() );'
 
 addons:
-  apt:
-    sources:
-      - mongodb-3.2-trusty
-    packages:
-      - mongodb-org-server
   artifacts:
     s3_region: us-west-2
     paths:
@@ -21,9 +32,9 @@ addons:
     target_paths:
       - /
 
-services:
-  - docker
-  - mongodb
+install:
+  - npm install
 
 script:
+  - npm run lint
   - ./artifact.sh
