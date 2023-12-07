@@ -1,6 +1,6 @@
 {
   "name": "highwater",
-  "version": "0.4.2-alpha.2",
+  "version": "0.4.2-alpha.3",
   "description": "API for managing user metadata.",
   "main": "lib/index.js",
   "directories": {
@@ -18,7 +18,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "@godaddy/terminus": "^4.6.0",
-    "amoeba": "1.1.1-alpha.2",
+    "amoeba": "1.2.1-alpha.1",
     "aws-sdk": "2.1473.0",
     "bunyan": "1.8.14",
     "crypto-js": "4.2.0",
@@ -27,7 +27,7 @@
     "moment": "2.29.4",
     "restify": "11.1.0",
     "restify-errors": "8.0.2",
-    "user-api-client": "0.5.1-alpha.2"
+    "user-api-client": "0.5.1-alpha.3"
   },
   "devDependencies": {
     "jshint": "^2.12.0"
