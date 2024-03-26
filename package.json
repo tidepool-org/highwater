@@ -18,16 +18,16 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "@godaddy/terminus": "^4.6.0",
-    "amoeba": "1.2.1-alpha.4",
+    "amoeba": "1.2.2",
     "aws-sdk": "2.1473.0",
-    "bunyan": "1.8.14",
+    "bunyan": "1.8.15",
     "crypto-js": "4.2.0",
     "kafkajs": "^1.14.0",
     "lodash": "4.17.21",
     "moment": "2.29.4",
     "restify": "11.1.0",
     "restify-errors": "8.0.2",
-    "user-api-client": "0.5.1-alpha.6"
+    "user-api-client": "0.5.1"
   },
   "devDependencies": {
     "jshint": "^2.12.0"
