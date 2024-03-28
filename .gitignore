@@ -21,4 +21,8 @@ node_modules
 build
 
 deploy/
-artifact_node.sh
+artifact_docker.sh
+
+.vscode/
+*.envrc
+*.env
