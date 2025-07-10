@@ -21,6 +21,7 @@
     "@godaddy/terminus": "^4.6.0",
     "amoeba": "1.2.3",
     "aws-sdk": "2.1473.0",
+    "axios": "^1.10.0",
     "bunyan": "1.8.15",
     "crypto-js": "4.2.0",
     "kafkajs": "^1.14.0",
