@@ -24,7 +24,7 @@
     "bunyan": "1.8.15",
     "crypto-js": "4.2.0",
     "kafkajs": "^1.14.0",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "moment": "2.29.4",
     "restify": "11.1.0",
     "restify-errors": "8.0.2",
